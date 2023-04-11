@@ -184,8 +184,17 @@ function decodeA1Z26(encoded){
 }
 
 function aSymbolKeypress(key){
-    document.getElementById("asymbolbox1").value += key
-    document.getElementById("asymbolbox2").value += key
+    var boxContent = document.getElementById("asymbolbox1").value
+
+    if(key == "DEL"){
+        boxContent = boxContent.slice(0,-1)
+    }
+    else{
+        boxContent += key
+    }
+    
+    document.getElementById("asymbolbox1").value = boxContent
+    document.getElementById("asymbolbox2").value = boxContent
 }
 
 function updateASymbolBox(box){
