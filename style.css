@@ -1,0 +1,127 @@
+@font-face {
+    font-family: authors-symbol;
+    src: url(symbols/symbolfont.otf);
+}
+body{
+    margin: 8px;
+    padding: 8px;
+    background-color: #0d1117;
+}
+
+.decodingArea{
+    position: relative;
+    z-index: 1;
+}
+
+.darkText{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.dark{
+    background-color: #212934; 
+    color: #ffffff;
+    border-color: #30363d;
+}
+
+.darkInteractive{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration-line: none;
+    /*background-color: #161b22;*/
+    background-color: #ffffff;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #30363d;
+    border-radius: 5px;
+    color: #000000 ;
+}
+
+.decodeButton{
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding: 2px;
+}
+
+.symbol{
+    font-family: authors-symbol;
+    font-size: 30px;
+}
+
+.center{
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.aSymbolSection{
+    margin: auto;
+    width: fit-content;
+}
+
+.textBox{
+    width: 99%;
+    height: 50px;
+    resize: none;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.bgfilter{
+    filter: grayscale(100%) blur(20px) brightness(50%);
+}
+
+.blursmall{
+    filter: grayscale(100%) blur(5px);
+}
+
+.bgimg{
+    z-index: -1;
+    height: 100%;
+}
+
+.fillparent{
+    width: 100%;
+    height: 100%;
+}
+
+.background{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerimage{
+    height: 150px;
+    z-index: -1;
+}
+
+.footerbar{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer{
+    position: fixed;
+    margin: 8px;
+    padding: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 250px;
+}
+
+.aSymbolBox{
+    max-width: 100%;
+    max-height: 40%;
+}
