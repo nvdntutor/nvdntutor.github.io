@@ -10,6 +10,9 @@
         <script type = "text/javascript" src="./decode.js"></script>
     </head>
     <body>
+        <div class="z1 headerText">
+            <h1>Gravity Falls Cryptogram Decipherer</h1>
+        </div>
         <div class="decodingArea">
             <div>
                 <label class="darkText">Select Cipher: </label>
@@ -57,44 +60,53 @@
             <div class="footerbar">
                 <img src="BillCipher.webp" alt="Bill Cipher" class="footerimage">
             </div>
-            <label class="darkText">Decoded Symbols:</label>
-            <br>
-            <textarea id="asymbolbox1" class="textBox aSymbolBox dark" onchange="updateASymbolBox('1')"></textarea>
-
-            <br>
-
-            <label class="darkText">Symbols:</label>
-            <br>
-            <textarea id="asymbolbox2" class="symbol textBox aSymbolBox dark" onchange="updateASymbolBox('2')"></textarea>
-
-            <br>
-            <div id="symbolContainer" class="center">
-                <button type="button" onclick="aSymbolKeypress('A')"><img src="symbols/Symbol_cipher_-_A.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('B')"><img src="symbols/Symbol_cipher_-_B.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('C')"><img src="symbols/Symbol_cipher_-_C.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('D')"><img src="symbols/Symbol_cipher_-_D.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('E')"><img src="symbols/Symbol_cipher_-_E.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('F')"><img src="symbols/Symbol_cipher_-_F.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('G')"><img src="symbols/Symbol_cipher_-_G.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('H')"><img src="symbols/Symbol_cipher_-_H.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('I')"><img src="symbols/Symbol_cipher_-_I.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('J')"><img src="symbols/Symbol_cipher_-_J.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('K')"><img src="symbols/Symbol_cipher_-_K.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('L')"><img src="symbols/Symbol_cipher_-_L.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('M')"><img src="symbols/Symbol_cipher_-_M.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('N')"><img src="symbols/Symbol_cipher_-_N.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('O')"><img src="symbols/Symbol_cipher_-_O.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('P')"><img src="symbols/Symbol_cipher_-_P.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('R')"><img src="symbols/Symbol_cipher_-_R.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('S')"><img src="symbols/Symbol_cipher_-_S.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('T')"><img src="symbols/Symbol_cipher_-_T.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('U')"><img src="symbols/Symbol_cipher_-_U.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('V')"><img src="symbols/Symbol_cipher_-_V.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('W')"><img src="symbols/Symbol_cipher_-_W.webp"></button>
-                <button type="button" onclick="aSymbolKeypress('Y')"><img src="symbols/Symbol_cipher_-_Y.webp"></button>
-                <button type="button" onclick="aSymbolKeypress(' ')">SPACE</button>
-                <button type="button" onclick="aSymbolKeypress('DEL')">DELETE</button>
-
+            
+            <div class="footerContent">
+                <div class="flexAuto">
+                    <label class="darkText">Symbols:</label>
+                        <br>
+                    <textarea id="asymbolbox2" class="symbol textBox aSymbolBox dark" onchange="updateASymbolBox('2')"></textarea>
+                        <br>
+                    <label class="darkText">Decoded Symbols:</label>
+                        <br>
+                    <textarea id="asymbolbox1" class="textBox aSymbolBox dark" onchange="updateASymbolBox('1')"></textarea>
+                </div>
+                <div id="symbolContainer" class="symbolContainer">
+                    <button type="button" onclick="aSymbolKeypress('A')" class="keybtn"><img src="symbols/Symbol_cipher_-_A.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('B')" class="keybtn"><img src="symbols/Symbol_cipher_-_B.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('C')" class="keybtn"><img src="symbols/Symbol_cipher_-_C.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('D')" class="keybtn"><img src="symbols/Symbol_cipher_-_D.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('E')" class="keybtn"><img src="symbols/Symbol_cipher_-_E.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('F')" class="keybtn"><img src="symbols/Symbol_cipher_-_F.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('G')" class="keybtn"><img src="symbols/Symbol_cipher_-_G.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('H')" class="keybtn"><img src="symbols/Symbol_cipher_-_H.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('I')" class="keybtn"><img src="symbols/Symbol_cipher_-_I.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('J')" class="keybtn"><img src="symbols/Symbol_cipher_-_J.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('K')" class="keybtn"><img src="symbols/Symbol_cipher_-_K.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('L')" class="keybtn"><img src="symbols/Symbol_cipher_-_L.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('M')" class="keybtn"><img src="symbols/Symbol_cipher_-_M.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('N')" class="keybtn"><img src="symbols/Symbol_cipher_-_N.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('O')" class="keybtn"><img src="symbols/Symbol_cipher_-_O.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('P')" class="keybtn"><img src="symbols/Symbol_cipher_-_P.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('R')" class="keybtn"><img src="symbols/Symbol_cipher_-_R.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('S')" class="keybtn"><img src="symbols/Symbol_cipher_-_S.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('T')" class="keybtn"><img src="symbols/Symbol_cipher_-_T.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('U')" class="keybtn"><img src="symbols/Symbol_cipher_-_U.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('V')" class="keybtn"><img src="symbols/Symbol_cipher_-_V.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('W')" class="keybtn"><img src="symbols/Symbol_cipher_-_W.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('Y')" class="keybtn"><img src="symbols/Symbol_cipher_-_Y.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress(' ')" class="keybtn"><img src="symbols/spacekey.webp"></button>
+                    <button type="button" onclick="aSymbolKeypress('DEL')" class="keybtn"><img src="symbols/delkey.webp"></button>
+                </div>
+            </div>
+            <div class="z1 footerText">
+                <h6>
+                    Created by <a href="https://heretical.games" class="footerLink" target="_blank" rel="noopener noreferrer">
+                        HB
+                    </a> and <a href="https://nvdntutor.github.io/"class="footerLink" target="_blank" rel="noopener noreferrer">
+                        NN
+                    </a>
+                </h6>
             </div>
         </div>
 
