@@ -51,6 +51,11 @@ body{
     font-size: 30px;
 }
 
+.z1{
+    position: relative;
+    z-index: 1;
+}
+
 .center{
     margin: auto;
     width: fit-content;
@@ -148,4 +153,20 @@ body{
 
 .flexAuto{
     flex: auto;
+}
+
+.headerText{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.footerText{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
 }
