@@ -115,7 +115,7 @@ body{
     position: fixed;
     margin: 8px;
     padding: 8px;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     right: 0;
     max-height: 250px;
@@ -124,4 +124,28 @@ body{
 .aSymbolBox{
     max-width: 100%;
     max-height: 40%;
+}
+
+.keybtn{
+    height: 35px;
+    width: 35px;
+    margin: 2px;
+}
+
+.symbolContainer{
+    display: flex;
+    position: relative;
+    width: 195px;
+    flex-wrap: wrap;
+    flex: auto;
+    flex-grow: initial;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexAuto{
+    flex: auto;
 }
