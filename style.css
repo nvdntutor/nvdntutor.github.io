@@ -170,3 +170,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.footerLink{
+    color: #62b6ff;
+}
