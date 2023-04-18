@@ -70,9 +70,12 @@ body{
 .textBox{
     width: 99%;
     height: 50px;
-    resize: none;
+}
+
+.noresize{
     border-radius: 5px;
     overflow-y: scroll;
+    resize: none;
 }
 
 .bgfilter{
