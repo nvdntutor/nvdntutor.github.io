@@ -29,18 +29,18 @@
             <div>
                 <label class="darkText">Enter Cryptogram: </label>
                 <br>
-                <textarea id="input" class="textBox dark" value=""></textarea>
+                <textarea id="input" class="textBox noresize dark" value=""></textarea>
             </div>
 
             <div id="keyContainer" style="display: none;">
                 <label class="darkText">Key: </label>
                 <br>
-                <textarea id="key" class="dark" value=""></textarea>
+                <textarea id="key" class="dark noresize" value=""></textarea>
             </div>
 
             <div>
                 <label class="darkText">Decoded Cipher:</label>
-                <textarea readonly id="output" class="textBox dark" value=""></textarea>
+                <textarea readonly id="output" class="textBox noresize dark" value=""></textarea>
             </div>
 
             <div class="decodeButton" display="flex">
@@ -68,11 +68,11 @@
                 <div class="flexAuto">
                     <label class="darkText">Symbols:</label>
                         <br>
-                    <textarea id="asymbolbox2" class="symbol textBox aSymbolBox dark" onchange="updateASymbolBox('2')"></textarea>
+                    <textarea id="asymbolbox2" class="symbol noresize textBox aSymbolBox dark" onchange="updateASymbolBox('2')"></textarea>
                         <br>
                     <label class="darkText">Decoded Symbols:</label>
                         <br>
-                    <textarea id="asymbolbox1" class="textBox aSymbolBox dark" onchange="updateASymbolBox('1')"></textarea>
+                    <textarea id="asymbolbox1" class="textBox noresize aSymbolBox dark" onchange="updateASymbolBox('1')"></textarea>
                     <div class="decodeButton">
                         <a type="button" class="darkInteractive decodeButton" href="#e" onclick="clearSymBox()">Clear</a>
                     </div>

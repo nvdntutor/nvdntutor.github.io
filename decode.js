@@ -41,9 +41,10 @@ function onDecodeTypeSelected(element){
     var decodeType = element.value
 
     /*
-    document.getElementById("keyContainer").style.display = "none";
     document.getElementById("symbolContainer").style.display = "none"
     */
+
+    document.getElementById("keyContainer").style.display = "none";
     
     if (decodeType == "vigenere"){
         document.getElementById("keyContainer").style.display = "block";
