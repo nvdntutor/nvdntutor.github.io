@@ -239,6 +239,7 @@ function getCharIndex(charIndex){
 function clearCrypBox(){
     document.getElementById("input").value = null
     document.getElementById("output").value = null
+    document.getElementById("key").value = null
 }
 
 function clearSymBox(){
