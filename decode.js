@@ -234,3 +234,13 @@ function getCharIndex(charIndex){
 
     return null;
 }
+
+function clearCrypBox(){
+    document.getElementById("input").value = null
+    document.getElementById("output").value = null
+}
+
+function clearSymBox(){
+    document.getElementById("asymbolbox1").value = null
+    document.getElementById("asymbolbox2").value = null
+}

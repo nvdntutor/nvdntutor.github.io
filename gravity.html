@@ -38,14 +38,17 @@
                 <textarea id="key" class="dark" value=""></textarea>
             </div>
 
-            <div class="decodeButton">
-                <a type="button" class="darkInteractive decodeButton" href="#e" onclick="decode()">Decode</a>
-            </div>
-
             <div>
+                <label class="darkText">Decoded Cipher:</label>
                 <textarea readonly id="output" class="textBox dark" value=""></textarea>
             </div>
+
+            <div class="decodeButton" display="flex">
+                <a type="button" class="darkInteractive decodeButton" href="#e" onclick="decode()">Decode</a>
+                <a type="button" class="darkInteractive decodeButton" href="#e" onclick="clearCrypBox()">Clear</a>
+            </div>
         </div>
+
         <hr class="dark">
 
         <div class="background">
@@ -70,6 +73,9 @@
                     <label class="darkText">Decoded Symbols:</label>
                         <br>
                     <textarea id="asymbolbox1" class="textBox aSymbolBox dark" onchange="updateASymbolBox('1')"></textarea>
+                    <div class="decodeButton">
+                        <a type="button" class="darkInteractive decodeButton" href="#e" onclick="clearSymBox()">Clear</a>
+                    </div>
                 </div>
                 <div id="symbolContainer" class="symbolContainer">
                     <button type="button" onclick="aSymbolKeypress('A')" class="keybtn"><img src="symbols/Symbol_cipher_-_A.webp"></button>
