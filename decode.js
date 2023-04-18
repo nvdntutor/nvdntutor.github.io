@@ -34,7 +34,7 @@ function decode(){
             break;
     }
 
-    document.getElementById("output").innerHTML = decoded;
+    document.getElementById("output").value = decoded;
 }
 
 function onDecodeTypeSelected(element){
